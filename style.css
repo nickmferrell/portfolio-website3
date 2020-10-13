@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Montserrat:wght@500&display=swap');
+
+/* set the page background color */
+body{
+  background-color: rgba(221, 184, 115, 0.301);
+}
+
+
+
+/* only make the h1 of header big, not the whole header */
+header {
+  background-color: brown;
+  border: 1px solid brown;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 50px;
+  text-align: center;
+  color: azure;
+  margin-bottom: 0;
+}
+
+header nav {
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  padding-right: 10px
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li a {
+  font-family: Montserrat;
+  color: azure;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
+}
+
+
+
+/* center image by cutting down margins to auto, and drastically desizing */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 50%;
+  padding: 5px;
+}
+
+.wrapper {
+  width: 575px;
+  margin: auto;
+}
+
+.gap-sm {
+  height: 25px;
+  margin: auto;
+}
+
+hr {
+    /* overflow: visible; For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    ;
+}
+
+/* group elements with similar properties to cut down clutter code */
+h1, h2, h3, footer {
+  font-family: fantasy;
+  text-align: center;
+  color: brown
+}
+
+
+/* Make sure the text isn't too close to the wall */
+main {
+  margin-left: 7.5px
+}
+li {
+  font-family: fantasy;
+}
+
+
+h1 {
+  color: rgba(221, 184, 115, 0.301)
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  font-family: fantasy;
+  font-size: 14px
+}
+
+form label{
+  display: block;
+}
+
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
+
+@media all and (min-width: 800px) {
+  header .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%
+  }
+
+  ul {
+    align-items: flex-end;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+}
+
+.group {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+  }
+
+.item{
+  flex: 1;
+  margin: 10px;
+}
+
+.item h3 {
+  font-size: 20px;
+  font-family: 'Cedarville Cursive';
+  margin-bottom: 10px
+}
+
+
+.center {
+  text-align: center;
+}
+
+.item img {
+  width: 100%
+}
+
+/* float list left so location map can sit to the right */
+ol {
+  float: left;
+  padding: 25px;
+}
+
+footer::after {
+  content: "2020"
+}
+
