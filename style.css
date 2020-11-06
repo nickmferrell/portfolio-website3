@@ -1,25 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Montserrat:wght@500&display=swap')  */
+
+
 
 /* set the page background color */
 body{
-  background-color: rgba(221, 184, 115, 0.301);
+  background-color: #FFEEDB
 }
 
 
 
 /* only make the h1 of header big, not the whole header */
 header {
-  background-color: brown;
-  border: 1px solid brown;
+  /* background-color: rgb(24, 153, 153); */
+  border: 1px solid #FFEEDB;
   margin-bottom: 20px;
 }
 
 header h1 {
   font-size: 50px;
   text-align: center;
-  color: azure;
+  color: #464F51;
   margin-bottom: 0;
 }
 
@@ -36,8 +38,8 @@ header nav ul {
 }
 
 header nav ul li a {
-  font-family: Montserrat;
-  color: azure;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #464F51;
   text-decoration: none;
   padding: 0 20px 0 0;
 }
@@ -56,6 +58,7 @@ header nav ul li:last-child a {
   width: 50%;
   height: 50%;
   padding: 5px;
+  border-radius: 50%
 }
 
 .wrapper {
@@ -90,7 +93,7 @@ hr:after {
 h1, h2, h3, footer {
   font-family: fantasy;
   text-align: center;
-  color: brown
+  color: #464F51
 }
 
 
@@ -99,7 +102,9 @@ main {
   margin-left: 7.5px
 }
 li {
-  font-family: fantasy;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #464F51;
+  font-size: 14px
 }
 
 
@@ -112,8 +117,13 @@ h1 {
   flex-direction: column;
 }
 
+.group .item {
+  border-radius: 50%;
+}
+
 p {
-  font-family: fantasy;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #464F51;
   font-size: 14px
 }
 
@@ -131,11 +141,19 @@ form textarea {
 }
 
 @media all and (min-width: 800px) {
+  header h1 {
+    padding-left: 10px
+  }
+  
   header .wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%
+  }
+
+  li {
+    font-size: 16px
   }
 
   ul {
@@ -160,7 +178,7 @@ form textarea {
 
 .item h3 {
   font-size: 20px;
-  font-family: 'Cedarville Cursive';
+  font-family: cursive;
   margin-bottom: 10px
 }
 

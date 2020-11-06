@@ -14,7 +14,7 @@
         <h1><em>Nick M Ferrell</em></h1>
           <nav>
             <ul id="menu">
-              <li><a href="#home">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#projects">Projects</a></li>
               <li><a href="#contact">Contact</a></li>
@@ -27,7 +27,7 @@
     <main>
       <div class="wrapper">
         <!-- image goes here -->
-          <img class="center" src="images/headshot.jpg" alt="Headshot"/>
+          <img class="center" src="headshot.jpg" alt="Headshot"/>
           <p>Hey there! My name is Nick, and I'm a software developer living in Charleston, SC. My family and I just moved here, and we're excited to see what opportunity awaits!</p>
 
           <p>As a developer, I am interested in:</p>
@@ -43,7 +43,7 @@
     <div class="gap-sm"></div>
       <section id="about">
         <h2>About</h2>
-          <p>I've spent the last several years touring the country as a guitar player for a national country act. I was fortunate enough to see amazing places, play amazing shows, and meet amazing people. Working with different peole in different places every week taught me a great deal about teamwork and resolution. Now, as a student at <a href="https://www.thinkful.com">Thinkful</a>, I'm able to apply these skills, with my taste for the creative, to a new career in development. As a bonus, I get to have my amazing wife and beautiful 2-year-old daughter by my side as I embark on this newly beachside programming venture!</p>  
+          <p>I've spent the last several years touring the country as a guitar player for a national country act. I was fortunate enough to see amazing places, play amazing shows, and meet amazing people. Working with different peole in different places every week taught me a great deal about teamwork and resolution. Now, as a student at <a href="https://www.thinkful.com" target="_blank">Thinkful</a>, I'm able to apply these skills, with my taste for the creative, to a new career in development. As a bonus, I get to have my amazing wife and beautiful 2-year-old daughter by my side as I embark on this newly beachside programming venture!</p>  
 
           <p>Please reach out for anything you might need. In the meantime, I look forward to working with other great developers to build robust projects, and really just great software!</p>
       </section>
@@ -53,18 +53,20 @@
 <div class="gap-sm"></div>
       <section id="projects">
         <h2>Projects</h2>
-          <p>While my portfolio of projects currently consists of a goose egg in terms of quantity right now, I am currently working toward a graduation from Thinkful's Coding Bootcamp. I trust that in my time at Thinkful, there will be a lot of projects to begin, and hopefully to complete, to showcase my work ethic and talents to a potential next employer! Until then, please allow to exemplify that I at least know <i>how</i> to present my projects to you in a clean and orderly fashion.</p>
+          <p>While my portfolio of projects currently consists of a goose egg in terms of quantity right now, I am currently working toward a graduation from Thinkful's Coding Bootcamp. I trust that in my time at Thinkful, there will be a lot of projects to begin, and hopefully to complete, to showcase my work ethic and talents to a potential next employer! Until then, please allow me to exemplify that I at least know <i>how</i> to present my projects to you in a clean and orderly fashion.</p>
           <div class="group">
             <div class="item">
-              <h3>Guitar App</h3>
-                <img class="item" src="images/comingsoon.jpg" alt="guitars"/>
-                <p>I've always been a huge, huge fan of guitars and in my programming, I would like to develop a sort of guide, in its simplest forms, to the most iconic guitars, and who has played them. If you're a fan of Eric Clapton or Mark Knopfler, I'll point you to the Fender Stratocaster. Fan of Slash? The Gibson Les Paul, and so on. This would be a fun project for me, and hopefully an even more enjoyable clickthrough for anyone who takes a look!</p>
+              <h3>Guitar Quiz App</h3>
+                <img class="item" src="geetars.jpg" alt="guitars"/>
+                <p>I've always been a bit of a guitar fanatic, and as a touring musician, I've had the chance to go around and see, play, and learn about the great guitars in the world. Using HTML, JavaScript, and CSS, I've built an app that tests the User's knowledge through a series of five questions. Take a look <a href="https://nickmferrell.github.io/quiz-app/" target="_blank">here</a>!</p>
+
+                <p>You can find the full code <a href="https://github.com/nickmferrell/quiz-app" target="_blank">here</a>.</p>
             </div>
-            <div class="item">
+            <!-- <div class="item">
               <h3>Concert App</h3>
-              <img class="item" src="images/comingsoon.jpg" alt="concertgoers"/>
+              <img class="item" src="comingsoon.jpg" alt="concertgoers"/>
               <p> Another thing that's always been a big thing for me is concerts. From live music to live comedy to live sports, you name it. It's fun and exciting, but there's always the headache of navigating a new town, a new venue, parking lots, things to do around the venue, etc. I'd like to develop a site that doesn't just connect you to the ticket booth, but also to the planning facilitator. A real one-stop shop!</p>
-            </div>
+            </div> -->
           </div>
       </section>
 
@@ -74,24 +76,19 @@
       <section id="contact">
         <h2>Contact</h2>
           <div class="container">
-              <form action="mailto:nickmwferrell@gmail.com" method="POST">
-                <label for="user-name">Name:</label>
-                <input id="user-name" type="text" name="name">
-
-                <label for="user-email">Email:</label>
-                <input id="user-email" type="text" name="email">
-
-                <label for="user-message">Message:</label>
-                <textarea id="user-message" name="message"></textarea>
-                <button type="submit">Submit</button>
+              <form action="https://formspree.io/f/xrgokdvd" method="POST">
+              <label>Name:<input type="text" name="name"></label>
+              <label>Email:<input type="text" name="_replyto"></label>
+              <label>Message:<textarea name="message"></textarea></label>
+              <button type="submit">Submit</button>
               </form>
           </div>
 
 
             <ol>
-              <li><a href="https://github.com/nickmferrell">GitHub</a></li>
-              <li><a href="https://www.linkedin.com/in/nicholas-ferrell-2ba3775b/">LinkedIn</a></li>
-              <li><a href="mailto:nickmwferrell@gmail.com">Email</a></li>
+              <li><a href="https://github.com/nickmferrell" target="_blank">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/nicholas-ferrell-2ba3775b/" target="_blank">LinkedIn</a></li>
+              <li><a href="mailto:nickmwferrell@gmail.com" target="_blank">Email</a></li>
             </ol>
             <article class="wrapper">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107260.22719271292!2d-79.88626003766399!3d32.848373211031685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fe6d16ae1ee5f5%3A0x6b90509f7d5d01e3!2sMt%20Pleasant%2C%20SC!5e0!3m2!1sen!2sus!4v1601404605318!5m2!1sen!2sus" width="600" height="337" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
